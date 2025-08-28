@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply antialiased selection:bg-sky-300 selection:text-slate-900 dark:selection:bg-emerald-300 dark:selection:text-slate-900;
+}
+
+.gradient-surface {
+  @apply bg-gradient-light dark:bg-gradient-dark bg-fixed bg-cover bg-no-repeat min-h-screen;
+}
+
+.container-padded {
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.card {
+  @apply rounded-2xl border border-white/20 dark:border-white/10 backdrop-blur bg-white/40 dark:bg-white/5 shadow-glow dark:shadow-glow-dark;
+}
+
+.section-title {
+  @apply text-3xl sm:text-4xl font-bold tracking-tight; 
+}
+
+
